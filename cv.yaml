@@ -1,0 +1,61 @@
+name: John Doe
+title: Senior Software Engineer
+location: Berlin, Germany
+phone: "+49-123-4567890"
+email: john.doe@example.com
+linkedin: https://linkedin.com/in/johndoe
+
+summary: >
+  Experienced software engineer with over 10 years of expertise in backend systems, cloud infrastructure, and DevOps. Proven ability to lead teams and deliver large-scale platforms.
+
+education:
+  - degree: MSc Computer Science
+    university: TU Berlin
+    location: Berlin, Germany
+    year: 2018
+    status: Graduated with Distinction
+    thesis: Distributed Systems Optimization in Kubernetes
+    gpa: 1.3
+
+experience:
+  - company: Stripe
+    title: Staff Engineer
+    location: Remote
+    start: 2020
+    end: Present
+    bullets:
+      - Led migration to Kubernetes, reducing deployment time by 45%
+      - Mentored 5 junior engineers and improved team velocity by 30%
+      - Built observability stack using Prometheus and Grafana
+
+  - company: Zalando
+    title: Senior Backend Developer
+    location: Berlin, Germany
+    start: 2016
+    end: 2020
+    bullets:
+      - Designed microservices for checkout and payments
+      - Reduced API response latency by 60% through optimized caching
+
+programs:
+  - name: Google Summer of Code
+    org: CNCF
+    year: 2017
+
+certifications:
+  - name: AWS Certified Solutions Architect
+    issuer: Amazon
+    year: 2021
+
+skills:
+  - Go
+  - Kubernetes
+  - Terraform
+  - PostgreSQL
+  - Python
+
+languages:
+  - name: English
+    level: Fluent
+  - name: German
+    level: Native

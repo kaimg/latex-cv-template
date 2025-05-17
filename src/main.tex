@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[margin=1.5cm]{geometry} % Adjusted margin for symmetry
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{fontawesome5}
 \usepackage{roboto}
 \usepackage{hyperref}
@@ -34,73 +34,92 @@
 
 \begin{document}
 
-\begin{center} % Ensuring symmetry in header
-    {\Huge\textbf{Full Name}}\\[0.3em]
-    {\Large\textcolor{mainblue}{Job Title}}\\[0.3em]
-    \faMapMarker* \ Location, Country
-    \faPhone* \ +CountryCode-PhoneNumber
-    \faEnvelope \ \href{mailto:email@example.com}{email@example.com \ \faLinkedin \ \href{https://linkedin.com/in/username}{linkedin.com/in/username}}
+\begin{center}
+    {\Huge\textbf{ John Doe }}\\[0.3em]
+    {\Large\textcolor{mainblue}{ Senior Software Engineer }}\\[0.3em]
+    \faMapMarker* \ Berlin, Germany \quad
+    \faPhone* \ +49-123-4567890 \quad
+    \faEnvelope \ \href{mailto:john.doe@example.com}john.doe@example.com \quad
+    \faLinkedin \ \hrefhttps://linkedin.com/in/johndoe}https://linkedin.com/in/johndoe 
 \end{center}
 
 \section*{Professional Summary}
 \vspace{-0.8em}
-Brief professional summary. Mention key experience, skills, and strengths relevant to the field of work. Highlight areas of expertise and key accomplishments.
+Experienced software engineer with over 10 years of expertise in backend systems, cloud infrastructure, and DevOps. Proven ability to lead teams and deliver large-scale platforms.
+
 
 \section*{Education}
-\vspace{-0.8em}
-\textbf{Degree Title} \hfill Graduation Year\\
-University Name, Location \hfill Graduation Status
+
+\textbf{ MSc Computer Science } \hfill 2018\\
+TU Berlin, Berlin, Germany \hfill Graduated with Distinction
 \begin{itemize}[leftmargin=*, nosep]
-    \item Thesis/Project: "Thesis/Project Title" \hfill \textbf{GPA:} GPA/100
+    \item Thesis: "Distributed Systems Optimization in Kubernetes" \hfill \textbf{GPA:} 1.3
 \end{itemize}
+
 
 \section*{Work Experience}
-\vspace{-0.6em}
-\role{Company Name}{Job Title}{Location}{Start Date - End Date}
+
+\role{ Stripe }{ Staff Engineer }{ Remote }{ 2020 -- Present }
 \vspace{-0.8em}
 \begin{itemize}[leftmargin=*, nosep]
-    \item Job responsibility or achievement
-    \item Job responsibility or achievement
-    \item Job responsibility or achievement
-\end{itemize}
 
+    \item Led migration to Kubernetes, reducing deployment time by 45%
+
+    \item Mentored 5 junior engineers and improved team velocity by 30%
+
+    \item Built observability stack using Prometheus and Grafana
+
+\end{itemize}
 \vspace{0.3em}
-\role{Company Name}{Job Title}{Location}{Start Date - End Date}
+
+\role{ Zalando }{ Senior Backend Developer }{ Berlin, Germany }{ 2016 -- 2020 }
 \vspace{-0.8em}
 \begin{itemize}[leftmargin=*, nosep]
-    \item Job responsibility or achievement
-    \item Job responsibility or achievement
-    \item Job responsibility or achievement
-\end{itemize}
 
-% Repeat as necessary for more roles
+    \item Designed microservices for checkout and payments
+
+    \item Reduced API response latency by 60% through optimized caching
+
+\end{itemize}
+\vspace{0.3em}
+
 
 \section*{International Programs}
 \begin{itemize}[leftmargin=*, nosep]
-    \item \textbf{Program Name} - Program Organization (Year)
-    \item \textbf{Program Name} - Program Organization (Year)
+
+    \item \textbf{ Google Summer of Code } - CNCF (2017)
+
 \end{itemize}
 
 \section*{Certifications}
 \begin{itemize}[leftmargin=*, nosep]
-    \item \textbf{Certification Name} - Issuing Organization (Year)
-    \item \textbf{Certification Name} - Issuing Organization (Year)
+
+    \item \textbf{ AWS Certified Solutions Architect } - Amazon (2021)
+
 \end{itemize}
 
 \section*{Skills}
 \begin{itemize}[leftmargin=*, nosep]
-    \item Skill 1
-    \item Skill 2
-    \item Skill 3
-    \item Skill 4
-    % Add other relevant skills
+
+    \item Go
+
+    \item Kubernetes
+
+    \item Terraform
+
+    \item PostgreSQL
+
+    \item Python
+
 \end{itemize}
 
 \section*{Languages}
 \begin{itemize}[leftmargin=*, nosep]
-    \item Language 1 (Native/Fluent/Proficient) - Proficiency Level
-    \item Language 2 (Native/Fluent/Proficient) - Proficiency Level
-    \item Language 3 (Native/Fluent/Proficient) - Proficiency Level
+
+    \item English — Fluent
+
+    \item German — Native
+
 \end{itemize}
 
 \end{document}

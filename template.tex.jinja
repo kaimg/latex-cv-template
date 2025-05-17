@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{fontawesome5}
+\usepackage{roboto}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+\definecolor{mainblue}{RGB}{0,90,160}
+\definecolor{darkgray}{RGB}{50,50,50}
+\definecolor{lightgray}{RGB}{120,120,120}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=mainblue,
+    urlcolor=mainblue
+}
+
+\titleformat{\section}
+    {\Large\bfseries\color{mainblue}}
+    {}{0em}
+    {}[\vspace{-0.8em}\rule{\textwidth}{0.5pt}]
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\role}[4]{
+    \noindent\textbf{#1} — \textit{#2} — #3 — #4\\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\textbf{ {{{{ name }}}} }}\\[0.3em]
+    {\Large\textcolor{mainblue}{ {{{{ title }}}} }}\\[0.3em]
+    \faMapMarker* \ {{{{ location }}}} \quad
+    \faPhone* \ {{{{ phone }}}} \quad
+    \faEnvelope \ \href{mailto:{{{{ email }}}}}{{{{ email }}}} \quad
+    \faLinkedin \ \href{{{{ linkedin }}}}}{{{{ linkedin }}}} 
+\end{center}
+
+\section*{Professional Summary}
+\vspace{-0.8em}
+{{{{ summary }}}}
+
+\section*{Education}
+{% for edu in education %}
+\textbf{ {{{{ edu.degree }}}} } \hfill {{{{ edu.year }}}}\\
+{{{{ edu.university }}}}, {{{{ edu.location }}}} \hfill {{{{ edu.status }}}}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Thesis: "{{{{ edu.thesis }}}}" \hfill \textbf{GPA:} {{{{ edu.gpa }}}}
+\end{itemize}
+{% endfor %}
+
+\section*{Work Experience}
+{% for exp in experience %}
+\role{ {{{{ exp.company }}}} }{ {{{{ exp.title }}}} }{ {{{{ exp.location }}}} }{ {{{{ exp.start }}}} -- {{{{ exp.end }}}} }
+\vspace{-0.8em}
+\begin{itemize}[leftmargin=*, nosep]
+{% for b in exp.bullets %}
+    \item {{{{ b }}}}
+{% endfor %}
+\end{itemize}
+\vspace{0.3em}
+{% endfor %}
+
+\section*{International Programs}
+\begin{itemize}[leftmargin=*, nosep]
+{% for p in programs %}
+    \item \textbf{ {{{{ p.name }}}} } - {{{{ p.org }}}} ({{{{ p.year }}}})
+{% endfor %}
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}[leftmargin=*, nosep]
+{% for c in certifications %}
+    \item \textbf{ {{{{ c.name }}}} } - {{{{ c.issuer }}}} ({{{{ c.year }}}})
+{% endfor %}
+\end{itemize}
+
+\section*{Skills}
+\begin{itemize}[leftmargin=*, nosep]
+{% for skill in skills %}
+    \item {{{{ skill }}}}
+{% endfor %}
+\end{itemize}
+
+\section*{Languages}
+\begin{itemize}[leftmargin=*, nosep]
+{% for lang in languages %}
+    \item {{{{ lang.name }}}} — {{{{ lang.level }}}}
+{% endfor %}
+\end{itemize}
+
+\end{document}
